@@ -371,6 +371,116 @@ section{
    width: 8rem;
 }
 
+.shopping-cart .box .content form .fa-edit{
+   width: 5.5rem;
+   font-size: 1.7rem;
+   cursor: pointer;
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   color:var(--black);
+}
+
+.shopping-cart .box .content form .fa-edit:hover{
+   background-color: var(--black);
+   color:var(--white);
+}
+
+@keyframes fadeLeft{
+   0%{
+      transform: translateX(5rem);
+   }
+}
+
+@keyframes fadeRight{
+   0%{
+      transform: translateX(-5rem);
+   }
+}
+
+.home-bg{
+   background:url(../images/home-bg.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.home-bg .home .slide-container{
+   margin-top: 12rem;
+}
+
+.home-bg .home .slide-container .slide{
+   display: none;
+   align-items: center;
+   gap:1.5rem;
+   flex-wrap: wrap;
+}
+
+.home-bg .home .slide-container .slide.active{
+   display: flex;
+}
+
+.home-bg .home .slide-container .slide .image{
+   flex:1 1 40rem;
+   animation: fadeRight .4s linear;
+}
+
+.home-bg .home .slide-container .slide .image img{
+   width: 100%;
+}
+.home-bg .home .slide-container .slide .content{
+   flex:1 1 40rem;
+   text-align: center;
+   animation: fadeLeft .4s linear;
+}
+
+.home-bg .home .slide-container .slide .content h3{
+   color:var(--white);
+   margin-bottom: 3rem;
+   text-transform: capitalize;
+   font-size: 7.5rem;
+   text-shadow: var(--box-shadow);
+   line-height: 1;
+}
+
+.home-bg .home .slide-container .slide .content .fa-angle-left,
+.home-bg .home .slide-container .slide .content .fa-angle-right{
+   height: 5rem;
+   width: 5rem;
+   line-height: 4.8rem;
+   font-size: 2rem;
+   color:var(--black);
+   background-color: var(--white);
+   margin:0 .5rem;
+   box-shadow: var(--box-shadow);
+   cursor: pointer;
+   border-radius: .5rem;
+}
+
+.home-bg .home .slide-container .slide .content .fa-angle-left:hover,
+.home-bg .home .slide-container .slide .content .fa-angle-right:hover{
+   background-color: var(--red);
+   color:var(--white);
+}
+
+.about .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 35rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.about .box-container .box{
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding:2rem;
+   text-align: center;
+   box-shadow: var(--box-shadow);
+}
+
+.about .box-container .box img{
+   width: 100%;
+   margin-bottom: 2rem;
+}
 
 .about .box-container .box h3{
    font-size: 2.5rem;
