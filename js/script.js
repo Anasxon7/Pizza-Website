@@ -23,3 +23,13 @@ document.querySelector('#order-btn').onclick = () =>{
 document.querySelector('#close-orders').onclick = () =>{
    myOrders.classList.remove('active');
 }
+
+let cart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>{
+   cart.classList.add('active');
+}
+
+document.querySelector('#close-cart').onclick = () =>{
+   cart.classList.remove('active');
+}
